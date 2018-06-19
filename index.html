@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Logistics Ways</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <style>
+      body {
+         padding-top: 0px;
+      	 padding-bottom: 0px;
+      	 background: url(http://subtlepatterns.com/patterns/lightpaperfibers.png) repeat 0 0;
+      }
+    .jumbotron {
+      margin: 0px 0;
+      text-align: center;
+      background-color:white;
+    }
+    .jumbotron h1 {
+      font-size: 52px;
+      line-height: 1;
+      font-weight: bold;
+    }
+
+  </style>
+  <body>
+	  <div class="container">
+		<div class="jumbotron" style="background-color: #EFEFEF;">
+			<h1>Logistics Ways</h1>
+			<p class="lead">Enter your starting and destination points for the route between them.</p>
+		</div>
+
+		  <hr>
+
+		<form action="/cgi-bin/form.py">
+			<div class="row input">
+
+				<div class="col-xs-4">
+					<div class="form-group">
+						<label for="Starting point:">Starting point:</label>
+						<input name="Starting point:" type="text" class="form-control input-sm" id="Starting point:">
+					</div>
+				</div>
+
+				<div class="col-xs-4">
+					<div class="form-group">
+						<label for="Destination point:">Destination point:</label>
+						<input name="Destination point:" type="text" class="form-control input-sm" id="Destination point:">
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<div class="col-xs-4">
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary btn-md" value="Find Ways"></input>
+					</div>
+				</div>
+			</div>
+		</form>
+	  </div>
+  	<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
